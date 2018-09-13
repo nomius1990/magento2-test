@@ -7,6 +7,6 @@ class Material extends \Magento\Eav\Model\Entity\Attribute\Frontend\AbstractFron
     public function getValue(\Magento\Framework\DataObject $object)
     {
         $value = $object->getData($this->getAttribute()->getAttributeCode());
-        return "<b>$value</b>";
+        return "<b>说了你不信什么都弄好了就是没法展示出来</b>";
     }
 }
