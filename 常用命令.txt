@@ -1,0 +1,78 @@
+重置目录权限 
+sudo chmod  -R  777 app/etc/ var/ pub/ generated/
+
+
+卸载 M2
+php bin/magento setup:uninstall
+
+显示后台管理员url
+php bin/magento info:adminuri
+
+插件列表
+php bin/magento module:status
+
+启用模块插件
+php bin/magento module:uninstall --clear-static-content Zou_Test
+
+禁用模块插件
+php bin/magento module:disable --clear-static-content Zou_Test
+
+卸载模块，比如卸载 Zou_Test
+php bin/magento module:uninstall --clear-static-content Zou_Test
+
+切换到生产模式
+php bin/magento deploy:mode:set production
+
+切换到开发模式
+php bin/magento deploy:mode:set developer
+
+代码编译,主要检查是否有语法错误,比如调用的类是否存在
+
+bin/magento setup:di:compile 
+
+生成静态文件
+生成最新的静态文件到 pub/static 里去
+默认模式和生产模式必须要这些静态文件,不然就报错
+
+bin/magento setup:static-content:deploy -f
+
+删除示例数据模块
+php bin/magento sampledata:remove 
+
+更新M2
+php bin/magento setup:upgrade
+
+启用维护模式
+php bin/magento maintenance:enable
+
+禁用维护模式
+php bin/magento maintenance:disable
+
+刷新索引
+这个经常用到,要熟记。
+有任何分类/产品的报错/数据不对 都可以用这个解决。
+后台不识别主题的话 也可以用这个解决。
+产品库存数据不对的话 也可以用这个解决。
+等等，反正遇到数据库表相关的报错 都可以优先用它来解决
+
+php bin/magento indexer:reindex
+
+刷新缓存
+php bin/magento cache:clean && php bin/magento cache:flush
+
+备份文件系统和数据库
+php bin/magento setup:backup --code --db
+
+回滚
+php bin/magento info:backups:list
+
+终结者命令,能解决90%的问题
+php bin/magento maintenance:enable 
+
+rm -rf var/di/* && rm -rf var/generation/* && rm -rf var/cache/* && rm -rf var/page_cache/* && rm -rf var/view_preprocessed/* && rm -rf pub/static/* && rm -rf generated/* && mkdir var/di
+
+php bin/magento setup:upgrade && php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f && php bin/magento indexer:reindex && php bin/magento maintenance:disable && php bin/magento cache:clean && php bin/magento cache:flush
+
+
