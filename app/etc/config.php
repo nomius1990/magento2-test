@@ -150,6 +150,7 @@ return [
         'Magestore_Bannerslider' => 1,
         'Shopial_Facebook' => 1,
         'Temando_Shipping' => 1,
-        'Vertex_Tax' => 1
+        'Vertex_Tax' => 1,
+        'Zou_Demo' => 1
     ]
 ];

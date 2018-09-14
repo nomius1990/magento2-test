@@ -1,7 +1,6 @@
 重置目录权限 
 sudo chmod  -R  777 app/etc/ var/ pub/ generated/
 
-
 卸载 M2
 php bin/magento setup:uninstall
 
