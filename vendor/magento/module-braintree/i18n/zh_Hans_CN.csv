@@ -1,0 +1,131 @@
+cc_type,信用卡类型
+cc_number,信用卡号
+avsPostalCodeResponseCode,avsPostalCodeResponseCode
+avsStreetAddressResponseCode,avsStreetAddressResponseCode
+cvvResponseCode,cvvResponseCode
+processorAuthorizationCode,processorAuthorizationCode
+processorResponseCode,processorResponseCode
+processorResponseText,processorResponseText
+braintree,braintree
+liabilityShifted,liabilityShifted
+liabilityShiftPossible,liabilityShiftPossible
+riskDataId,riskDataId
+riskDataDecision,riskDataDecision
+paymentId,paymentId
+payerEmail,payerEmail
+sale,销售
+credit,信用借贷
+authorization_expired,过期
+authorizing,正在授权
+authorized,已授权
+gateway_rejected,网关被拒
+failed,失败
+processor_declined,处理器被拒
+settled,已解决
+settling,设置
+submitted_for_settlement,提交处理
+voided,作废
+unrecognized,无法识别
+settlement_declined,解决申请被拒
+settlement_pending,解决申请挂起
+settlement_confirmed,解决申请已确认
+paypal_account,贝宝账号
+coinbase_account,比特钱包账号
+europe_bank_accout,欧洲银行账号
+credit_card,信用卡
+apple_pay_card,苹果支付信用卡
+android_pay_card,安卓支付信用卡
+Country,国家
+"Allowed Credit Card Types",允许的信用卡类型
+"Add Rule",添加规则
+"Braintree Settlement Report",Braintree结算报告
+"Sorry, but something went wrong",抱歉，出错了。
+"We can't initialize checkout.",我们不能初始化校验。
+"No authorization transaction to proceed capture.",继续捕获未授权交易。
+"Braintree error response.","Braintree 错误响应"
+"Payment method nonce can't be retrieved.","无法检索付款方法 nonce。"
+"Wrong transaction status",错误的交易记录的状态
+Authorize,授权
+"Authorize and Capture",授权和获取
+"--Please Select--","-- 请选择 --"
+"Please agree to all the terms and conditions before placing the order.",请在下订单前同意所有的条款和条件。
+"Credit Card Type",卡片验证号码
+"Credit Card Number",信用卡卡号
+"Please, enter valid Credit Card Number",请输入有效的信用卡号码
+"Expiration Date",过期日期
+"Please, enter valid Expiration Date",请输入有效的到期日期
+"Card Verification Number",信用卡验证号码
+"Please, enter valid Card Verification Number",请输入有效的信用卡验证号码
+ending,结束
+expires,到期
+"Are you sure you want to delete this PayPal account",您确定要删除该Paypal账号？
+"PayPal Account",贝宝帐户
+"PayPal Logo",贝宝徽标
+Actions,动作
+Delete,删除
+"Credit Card Information",信用卡信息
+"What is this?",这是什么？
+"Save for later use.",保存供以后使用。
+"Place Order",下订单
+"This payment is not available",这笔付款不可用
+MM,月月
+YY,年年
+"Please try again with another form of payment.",请再用另一种付款方式。
+"Sorry, but something went wrong.",抱歉，出错了。
+Payment,付款
+Braintree,布伦特里
+"Accept credit/debit cards and PayPal in your Magento store.<br/>No setup or monthly fees and your customers never leave your store to complete the purchase.","接受信用卡/借记卡和贝宝 Magento 存储区中的。 <br/>没有安装或每月的费用和您的客户永远不会离开你的商店来完成购买。"
+"Enable this Solution",启用此解决方案
+"Enable PayPal through Braintree",启用通过布伦特里贝宝
+"Vault Enabled",存储库启用
+"Basic Braintree Settings","基本Braintree 设置"
+Title,标题
+Environment,环境
+"Payment Action",支付行为
+"Merchant ID",商家ID
+"Public Key",公共密钥
+"Private Key",密钥
+"Advanced Braintree Settings","先进的Braintree 设置"
+"Vault Title",保密支付标题
+"Merchant Account ID","商人帐户 ID"
+"Advanced Fraud Protection",先进的防欺诈保护
+"Kount Merchant ID",Kount自动欺诈交易检查服务账号ID
+Debug,调试
+"CVV Verification",CVV验证
+"Credit Card Types",信用卡类型
+"Sort Order",排序
+"Country Specific Settings",国家/地区特定的设置
+"Payment from Applicable Countries",来自特定国家的付款
+"Payment from Specific Countries",具体国家的付款
+"Country Specific Credit Card Types",国家特定的信用卡类型
+"PayPal through Braintree",布伦特里通过贝宝
+"Override Merchant Name",重写商户名称
+"Require Customer's Billing Address",需要客户的帐单地址
+"Allow to Edit Shipping Address Entered During Checkout on PayPal Side",允许编辑航运贝宝一边在结帐时输入地址
+"Display on Shopping Cart",在购物车上的显示
+"Skip Order Review",跳过订单评审
+"3D Secure Verification Settings","3D 安全验证设置"
+"3D Secure Verification","3D 安全验证"
+"Threshold Amount",阈值金额
+"Verify for Applicable Countries",为适用的国家验证
+"Verify for Specific Countries",为特定的国家验证
+"Dynamic Descriptors",动态的描述符
+Name,姓名
+Phone,手机号码
+URL,URL
+"Apply filters in order to get results. Only first 100 records will be displayed in the grid, you will be able to download full version of the report in .csv format.","将筛选器应用才能得到结果。只有前 100 条记录将显示在网格中，您将能够下载完整版本的.csv 格式报告。"
+Select...,选择...
+Status,状态
+"Transaction Type",交易类型
+"Payment Type",支付方式
+"PayPal Payment ID","贝宝PayPal付款 ID"
+"Created At",创建于
+"Transaction ID","交易记录 ID"
+"Order ID",订单编号：
+Type,类型
+Amount,数额
+"Settlement Code",结算编码
+"Settlement Response Text",结算响应文本
+"Refund Ids","退款 Id"
+"Settlement Batch ID",结算批处理编号ID
+Currency,货币
