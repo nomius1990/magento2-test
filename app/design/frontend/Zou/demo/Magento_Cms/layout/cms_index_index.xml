@@ -1,23 +1,24 @@
 <?xml version="1.0"?>
 <!--
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
+因为cms 的首页就在这里进行配置的,所以需要修改 Magento_Cms 下面的这个文件
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!--引入需要的css-->
     <head>
         <css src="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"/>
         <css src="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"/>
-        <css src="js/OwlCarousel2-2.3.4/dist/assets/owl.transitions.css"/>
+        <!--<css src="js/OwlCarousel2-2.3.4/dist/assets/owl.transitions.css"/>-->
+        <css src="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.css"/>
     </head>
     <body>
+        <!--修改模块 引入模板文件-->
     	<referenceBlock name="page.top">
         	<block class="Magento\Framework\View\Element\Template" name="bannerslider" template="Magento_Cms::html/homepage/home-bannerslider.phtml"/>
         </referenceBlock>
         <referenceBlock name="content">
 	  		<block class="Magento\Framework\View\Element\Template" name="zou_home_content" before="home_block_container" template="Magento_Cms::html/homepage/home_content.phtml"/>
         </referenceBlock>
-        <!--<referenceBlock name="cms_page" remove="true"/>-->
+        <!--删除首页默认的content内容，也就是后台cms->page里的home页面里设置的content内容-->
+        <referenceBlock name="cms_page" remove="true"/>
     </body>
 </page>
