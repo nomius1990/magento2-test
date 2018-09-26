@@ -1,0 +1,9 @@
+Layout文件详解
+(1) magento使用xml描述layout,layout上的两大元素单元有Container 和 Block,整个页面都由block组成,block应该包含视图逻辑代码和模板,但大多数简单的block元素,可以是用m2提供的基类
+Layout 模式
+
+(2)Layout模式就是我们常说的1column/2column/3column布局
+每个页面都有一个Layout 文件
+
+empty 空白页面,1column (例如首页/产品详情页)
+2column-left 分类页面 2column-right(比较少见),3column (比较少见)

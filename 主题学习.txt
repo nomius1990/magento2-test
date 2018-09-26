@@ -1,0 +1,14 @@
+主题学习:
+1 etc 目录下放 view.xml 文件,这个里面是主题默认数据(比如产品默认尺寸/产品列表图片默认尺寸/默认加载的Js等)都是读取的这个文件
+
+2 media 目录放主题的预览图片(preview.jpg),必填项,如果没有的话就把默认主题luma下的preview.jpg放进去
+
+3 web 目录  ,顾名思义,就是放主题的css/js/images/fonts的地方
+
+4 registration.php 注册文件
+
+5 require-config.js 这个很重要,以后会经常遇到,用来引入js/重写核心js的配置文件
+
+6 theme.xml 这个值主题的配置文件
+
+7 i18n 是语言包目录,放翻译文件
