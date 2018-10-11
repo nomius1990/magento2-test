@@ -86,6 +86,7 @@ class Router implements \Magento\Framework\App\RouterInterface
      *
      * @param \Magento\Framework\App\RequestInterface $request
      * @return \Magento\Framework\App\ActionInterface|null
+     *  路由规则最终会调用这个方法来查找和执行
      */
     public function match(\Magento\Framework\App\RequestInterface $request)
     {
