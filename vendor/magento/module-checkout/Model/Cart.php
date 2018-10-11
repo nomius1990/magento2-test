@@ -498,11 +498,13 @@ class Cart extends DataObject implements CartInterface
     public function updateItems($data)
     {
         $infoDataObject = new \Magento\Framework\DataObject($data);
+
+        //在这里调用事件
         $this->_eventManager->dispatch(
             'checkout_cart_update_items_before',
             ['cart' => $this, 'info' => $infoDataObject]
         );
-
+        //调用事件结束
         $qtyRecalculatedFlag = false;
         foreach ($data as $itemId => $itemInfo) {
             $item = $this->getQuote()->getItemById($itemId);

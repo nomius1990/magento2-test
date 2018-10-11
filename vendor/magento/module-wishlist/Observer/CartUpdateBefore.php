@@ -2,6 +2,8 @@
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
+ *
+ * 实现事件的文件
  */
 
 namespace Magento\Wishlist\Observer;
