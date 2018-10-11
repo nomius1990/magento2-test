@@ -78,6 +78,7 @@ class Topmenu extends Template implements IdentityInterface
      * @param string $childrenWrapClass
      * @param int $limit
      * @return string
+     * 在 Magento\Catalog\Plugin\Block\Topmenu 有这个函数的插件代码
      */
     public function getHtml($outermostClass = '', $childrenWrapClass = '', $limit = 0)
     {

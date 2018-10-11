@@ -65,6 +65,8 @@ class Topmenu
      * @param int $limit
      * @return void
      * @SuppressWarnings("PMD.UnusedFormalParameter")
+     * 这是 theme/block/html/topmenu 的前置插件
+     *
      */
     public function beforeGetHtml(
         \Magento\Theme\Block\Html\Topmenu $subject,
