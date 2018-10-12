@@ -68,9 +68,11 @@ class Index extends \Magento\Framework\App\Action\Action
      */
     public function execute()
     {
-        $page = $this->resultPageFactory->create();
-        $page_layout = '1column';
-        $page->getConfig()->setPageLayout($page_layout);
-        return $page;
+        // mmodule = frontname  相当于访问了 .com/test/page/view
+        $this->_forward('view', 'page', 'test');
+//        $page = $this->resultPageFactory->create();
+//        $page_layout = '1column';
+//        $page->getConfig()->setPageLayout($page_layout);
+//        return $page;
     }
 }
