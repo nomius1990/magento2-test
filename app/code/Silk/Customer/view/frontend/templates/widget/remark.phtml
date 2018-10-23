@@ -1,0 +1,33 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Customer\Block\Widget\Telephone $block */
+?>
+
+<div class="field telephone <?= $block->isRequired() ? 'required' : '' ?>">
+    <label for="remark" class="label">
+        <span>
+            <?= $block->escapeHtml(__('Remark')) ?>
+        </span>
+    </label>
+    <div class="control">
+        <?php
+            $_validationClass = $block->escapeHtmlAttr(
+                $this->helper('Magento\Customer\Helper\Address')
+                     ->getAttributeValidationClass('Remark')
+            );
+        ?>
+        <input type="text"
+               name="remark"
+               id="remark"
+               value="<?= $block->escapeHtmlAttr($block->getRemark()) ?>"
+               title="<?= $block->escapeHtmlAttr(__('Remark')) ?>"
+               class="input-text <?= $_validationClass ?: '' ?>"
+        >
+    </div>
+</div>
